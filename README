@@ -42,5 +42,3 @@ Once the layer is added, you can build the dashboard image:
 bitbake dashboard-image
 ```
 
-## Maintainer
-Amin <your.email@example.com>
