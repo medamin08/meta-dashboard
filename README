@@ -1,0 +1,46 @@
+# meta-dashboard
+
+This Yocto layer provides recipes for a modern automotive dashboard application built with Qt 6.
+
+## Features
+- **Dashboard Application**: A Qt Quick / QML based dashboard UI.
+- **Simulation**: Python scripts for simulating CAN/vcan data for testing.
+- **Custom Image**: A ready-to-use image recipe (`dashboard-image`) that includes all necessary components.
+
+## Dependencies
+
+This layer depends on:
+
+- **URI**: git://git.yoctoproject.org/poky
+  - **branch**: scarthgap
+- **URI**: git://github.com/meta-qt6/meta-qt6
+  - **branch**: scarthgap
+
+## Installation
+
+To add this layer to your build environment, run:
+
+```bash
+bitbake-layers add-layer meta-dashboard
+```
+
+## Included Recipes
+
+### recipes-dashboard/dashboard-app
+The main C++ and QML dashboard application.
+- Installs the binary to `/usr/bin/dashboard-app`.
+- Includes a vcan setup script at `/usr/bin/setup-vcan`.
+- Includes simulation scripts at `/usr/share/dashboard/sim`.
+
+### recipes-core/images/dashboard-image.bb
+A core image with Qt 6 and the dashboard app pre-installed.
+
+## Usage
+Once the layer is added, you can build the dashboard image:
+
+```bash
+bitbake dashboard-image
+```
+
+## Maintainer
+Amin <your.email@example.com>

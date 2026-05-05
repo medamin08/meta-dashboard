@@ -1,0 +1,11 @@
+{
+  "P0113": "Intake Air Temp Sensor Circuit High",
+  "P0300": "Random/Multiple Cylinder Misfire Detected",
+  "P0340": "Camshaft Position Sensor Circuit",
+  "P0016": "Crankshaft/Camshaft Correlation",
+  "U0155": "Lost Comm. with Instrument Cluster",
+  "P0507": "Idle Control System RPM High",
+  "B2B00": "Body Control Module Fault",
+  "C0035": "Front Left Wheel Speed Sensor",
+  "U0100": "Lost Comm. with ECM/PCM"
+}

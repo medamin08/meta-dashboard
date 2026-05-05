@@ -1,0 +1,2 @@
+# Simple single-partition image for qemuarm
+part / --source rootfs --ondisk sda --fstype=ext4 --label root --align 1024 --size 512M
